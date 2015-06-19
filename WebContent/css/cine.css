@@ -1,0 +1,95 @@
+/*   
+	version:  1.0
+	author:   JaioneArteaga
+	date: 	  20150618
+		
+*/
+
+
+/***************************** 
+      ClearFix
+*******************************/
+/* .clearfix:before, .clearfix:after { */
+/* 	content: ""; */
+/* 	display: table; */
+/* } */
+
+/* .clearfix:after { */
+/* 	clear: both; */
+/* } */
+
+/* .clearfix { */
+/* 	*zoom: 1; */
+/* } */
+
+
+/* CSS Impresion */
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: rgb(147, 201, 229);
+  font-family: arial;
+  text-align: center;}
+
+#container {
+	
+
+  width: 900px; */
+  background-color: #FFF;
+  min-height: 700px;
+  clear: both;
+}
+
+ h1{
+	
+  position: absolute;
+  top: 30px;
+  left: 60px;		
+}
+#fondo_cine{
+	
+   margin-left: 30px;
+   margin-top: 20px;
+}
+
+#dia{
+	
+  position: absolute;
+  top: 100px;
+  left: 60px;		
+	
+}
+
+#ed{
+	
+  position: absolute;
+  top: 100px;
+  left: 200px;		
+	
+}
+
+h3 {
+  position: absolute;
+  bottom: -15px;
+  color: #FFF;
+  left: 65px;
+  background-color: rgba(250, 245, 245, 0);
+  display: none;
+  display: block;
+  
+}
+#prec{
+	
+  position: absolute;
+  bottom: 0px;
+  color: #FFF;
+  left: 200px;
+  background-color: rgba(250, 245, 245, 0);
+  display: none;
+  display: block;
+  font-size: 80px;
+	
+}
+
+
