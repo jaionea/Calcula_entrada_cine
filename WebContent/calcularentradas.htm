@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+  <base href="/Calcula_entrada_cine/">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+  <meta charset="utf-8">
+  <title>Calcular entrada de cine</title>
+  <meta name="description" content="Pagina para calcular la entrada de cine en HTML5">
+  <meta name="author" content="Jaione Arteaga Oyarzun">  
+  <link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
+  
+</head>
+<body>
+
+<div id="container">
+
+	<section id="calcular_entrada">			
+		
+			<header>
+				<h1>¡Calcula tu Entrada!</h1>
+			</header>	
+			
+			<div id="selectores">			
+			
+				<label for="listaDias">Dia: </label>
+				<select id="listaDias" name="listaDias"						 
+						onchange="calcularEntrada(listaDias.value,edad.value);" >
+					
+						<option value="lunes">Lunes</option>
+						<option value="martes" selected="selected">Martes</option>
+						<option value="miercoles">Miercoles</option>
+						<option value="jueves">Jueves</option>
+						<option value="viernes">Viernes</option>
+						<option value="sabado">Sabado</option>
+						<option value="domingo">Domingo</option>
+					
+				</select>
+			
+			
+			
+			
+				<label for="edad">Edad: </label>
+				<input type="text"					  
+				       id="edad" name="edad"  
+				       value="16"
+				       
+				       onkeypress="return justNumbers(event);" 
+				       onchange="calcularEntrada(listaDias.value,edad.value);"
+				        
+				       placeholder="0-99"				               
+					   size="2"
+					   maxlength="2" 
+					   >
+			
+			</div><!-- selectores -->			
+			
+			<footer>
+				<span>PRECIO</span>			
+				<output id="precio" name="precio">2€</output>
+			</footer>	
+			
+		<script type="text/javascript" src="js/cine.js"></script>	
+		
+	</section> <!-- calcular_entrada -->
+	
+</div>		
+	
+		
+</body>
+</html>
